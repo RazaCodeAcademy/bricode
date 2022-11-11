@@ -1,0 +1,76 @@
+.primary-gradient {
+    background: rgb(71, 226, 206);
+    background: linear-gradient(131deg, rgba(71, 226, 206, 1) 0%, rgba(41, 108, 159, 1) 40%, rgba(34, 82, 149, 1) 53%, rgba(28, 62, 140, 1) 71%);
+}
+
+.primary-gradient-2 {
+    background: rgb(155, 95, 235);
+    background: linear-gradient(172deg, rgba(155, 95, 235, 1) 0%, rgba(70, 44, 161, 1) 58%, rgba(45, 30, 140, 1) 84%, rgba(51, 33, 145, 1) 100%);
+}
+
+.secondary-gradient {
+    background-image: linear-gradient(to top, rgba(0, 217, 182, 100%), rgba(0, 193, 215, 100%));
+}
+
+.box-1 {
+    background-image: linear-gradient(to top, rgba(44, 120, 164, 100%), rgba(22, 60, 82, 100%));
+}
+
+.box-2 {
+    background-image: linear-gradient(to top, rgba(44, 120, 164, 100%), rgba(22, 60, 82, 100%));
+}
+
+.box-3 {
+    background-image: linear-gradient(to top, rgba(44, 120, 164, 100%), rgba(22, 60, 82, 100%));
+}
+
+.black-color {
+    color: #000000;
+}
+
+.secondary-color {
+    color: #21CCC8;
+}
+
+.bg--white {
+    background-color: #FFFFFF;
+}
+
+.light-blue {
+    color: #21CCC8;
+}
+
+.hidden {
+    display: none;
+}
+
+.ps-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+.m-top {
+    margin-top: 7rem;
+    z-index: 3;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 8rem;
+}
+
+.profile-img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.royal-blue {
+    background-color: #235697;
+}
+
+.light-blue-bg {
+    background-color: #9B5FEB;
+}

@@ -1,0 +1,198 @@
+.btn-signup {
+    display: block;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1.5rem 12rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    @include media-query(phone) {
+        padding: 1.5rem 8rem;
+    }
+}
+
+.signup-btn {
+    color: $white-color;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to right, rgba(155, 95, 235, 0.609) 0%, rgb(45, 30, 140) 71%);
+    &:hover {
+        color: white;
+    }
+}
+
+.login-btn {
+    background-color: transparent;
+    border: $border2;
+    color: $light-blue;
+    &:hover {
+        color: $light-blue;
+    }
+}
+
+.google-btn {
+    background-color: transparent;
+    border: $border2;
+    color: $black-color;
+    &:hover {
+        color: $black-color;
+    }
+}
+
+.linkedin-btn {
+    background-color: $light-blue;
+    color: $white-color;
+    &:hover {
+        color: white;
+    }
+}
+
+.google-btn,
+.linkedin-btn {
+    position: relative;
+    @include flex($justify: unset, $align: center);
+    img {
+        position: absolute;
+        left: 2rem;
+    }
+}
+
+.signup-btn-md {
+    display: block;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1.5rem 8rem;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    width: 50%;
+    margin: 0 auto 1.5rem auto;
+    z-index: 1;
+    overflow: hidden;
+    @include media-query(phone) {
+        width: 90%;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transition: all 0.3s ease;
+        background: rgba(25, 25, 107, 0.883);
+        border-radius: 3rem;
+    }
+    &:hover:after {
+        left: 0;
+        width: 100%;
+    }
+    &:active {
+        top: 2px;
+    }
+}
+
+.premium,
+.free {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 10rem;
+    border-radius: 3rem;
+    color: $white-color;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+    &:hover {
+        color: white;
+    }
+}
+
+.redeem-btn {
+    background-color: transparent;
+    border: 1px solid #00C2D5;
+    border-radius: 3rem;
+    color: #00C2D5;
+    font-weight: 500;
+    &:focus {
+        background-color: #00C2D5;
+        color: white;
+    }
+}
+
+.promote {
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 3rem;
+    padding: .2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: transparent;
+    @media screen and (max-width: 400px) {
+        padding: .2rem 1rem;
+    }
+}
+
+.tag-btn {
+    background-color: #cccc;
+    border-radius: 3rem;
+    color: #222222;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.expo-btn {
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    width: 20rem;
+    color: #fff;
+    font-weight: 500;
+    @media only screen and (max-width: 500px) {
+        width: 100%;
+        text-align: center!important;
+        margin-top: 1rem;
+        padding: 1.5rem 3rem;
+    }
+    &:hover {
+        color: #fff;
+    }
+}
+
+.upload-btn {
+    background: rgba(25, 25, 107, 0.883);
+    color: white;
+    border-radius: 3rem!important;
+    font-weight: 500;
+    &:hover {
+        color: white;
+    }
+}
+
+.btn-model {
+    border: 1px solid rgba(25, 25, 107, 0.883);
+    border-radius: 3rem;
+    width: 10rem;
+    color: rgba(25, 25, 107, 0.883);
+    font-weight: 500;
+}
+
+.follow-btn {
+    background-color: #0B67C2;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+    line-height: 1;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 1.2rem;
+    padding: 0.6rem 1.5rem;
+}

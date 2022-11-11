@@ -1,0 +1,19 @@
+<svg id="Group_3642" data-name="Group 3642" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22.676" height="25.084" viewBox="0 0 22.676 25.084">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_7312" data-name="Path 7312" d="M700.125-453.065l-9.514,5.492a3.559,3.559,0,0,1-3.648,0l-7.691-4.439a3.564,3.564,0,0,1-1.823-3.159v-8.881a3.567,3.567,0,0,1,1.823-3.161l7.691-4.439a3.559,3.559,0,0,1,3.648,0l9.513,5.492-4.739,2.736a3.57,3.57,0,0,1-3.649,0l-6.617-3.821a.723.723,0,0,0-.738,0,.724.724,0,0,0-.368.638v13.988a.722.722,0,0,0,.368.638.722.722,0,0,0,.738,0l6.617-3.821a3.562,3.562,0,0,1,3.649,0Z" transform="translate(-677.449 472.154)" fill="#21ccc8" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Group_3639" data-name="Group 3639" transform="translate(0 0)">
+    <path id="Path_7311" data-name="Path 7311" d="M700.125-453.065l-9.514,5.492a3.559,3.559,0,0,1-3.648,0l-7.691-4.439a3.564,3.564,0,0,1-1.823-3.159v-8.881a3.567,3.567,0,0,1,1.823-3.161l7.691-4.439a3.559,3.559,0,0,1,3.648,0l9.513,5.492-4.739,2.736a3.57,3.57,0,0,1-3.649,0l-6.617-3.821a.723.723,0,0,0-.738,0,.724.724,0,0,0-.368.638v13.988a.722.722,0,0,0,.368.638.722.722,0,0,0,.738,0l6.617-3.821a3.562,3.562,0,0,1,3.649,0Z" transform="translate(-677.449 472.154)" fill="#21ccc8" fill-rule="evenodd"/>
+    <g id="Group_3638" data-name="Group 3638" clip-path="url(#clip-path)">
+      <rect id="Rectangle_826" data-name="Rectangle 826" width="22.676" height="25.418" transform="translate(-0.001 -0.167)" fill="#21ccc8"/>
+    </g>
+  </g>
+  <g id="Group_3640" data-name="Group 3640" transform="translate(6.562 0)" style="isolation: isolate">
+    <path id="Path_7313" data-name="Path 7313" d="M684.483-471.651a5.928,5.928,0,0,0-2.952,5.045.723.723,0,0,1,.37-.638.717.717,0,0,1,.735,0l6.619,3.821a3.562,3.562,0,0,0,3.649,0l4.739-2.738-9.512-5.49a3.559,3.559,0,0,0-3.648,0" transform="translate(-681.531 472.154)" fill="#7ceae7" fill-rule="evenodd"/>
+  </g>
+  <g id="Group_3641" data-name="Group 3641" transform="translate(6.564 15.85)" style="isolation: isolate">
+    <path id="Path_7314" data-name="Path 7314" d="M684.484-453.564a5.93,5.93,0,0,1-2.952-5.045.721.721,0,0,0,.368.638.727.727,0,0,0,.736,0l6.619-3.821a3.559,3.559,0,0,1,3.648,0l4.741,2.736-9.513,5.492a3.56,3.56,0,0,1-3.648,0" transform="translate(-681.532 462.295)" fill="#7ceae7" fill-rule="evenodd"/>
+  </g>
+</svg>

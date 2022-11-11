@@ -1,0 +1,141 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin flex($justify: center, $align: center) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin notLastChild {
+	&:not(:last-child) {
+		@content;
+	}
+}
+
+@mixin selectDirectChilds {
+	& > * {
+		@content;
+	}
+}
+
+@mixin selectAllExceptLast {
+	& > *:not(:last-child) {
+		@content;
+	}
+}
+
+@mixin selectAllExceptFirst {
+	& > *:not(:first-child) {
+		@content;
+	}
+}
+
+@mixin selectFirstDirectChild {
+	& > *:first-child {
+		@content;
+	}
+}
+
+@mixin selectLastDirectChild {
+	& > *:last-child {
+		@content;
+	}
+}
+
+@mixin selectFirstChild {
+	&:first-child {
+		@content;
+	}
+}
+
+@mixin selectLastChild {
+	&:last-child {
+		@content;
+	}
+}
+
+@mixin multiLineClamp($lines) {
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+@mixin singleLineClamp {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+// MEDIA QUERY MANAGER
+/*
+
+0 - 600      => 37.5em      Phone
+600 - 992    => 62em        Tablet (portrait)
+992 - 1200   => 75em        Tablet (landscape)
+1200 - 1800  => 112.5em     Desktop style
+1800+        => 112.5em     Big desktop
+
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- desktop
+- big-desktop
+
+when user changes the default fontsize in the browsers our mediaquery with px are not effected
+In media queries when using em or rems both units take root font size from browser which is 16px
+but not takes root font size that we set earlier in the html selector definition
+here we're using ems because rems have some issues in different browsers when used in media qureies
+so 1em = 16px which is the browser's root font size
+so 
+media-query-px / root-size-browser => 600px/16px = 37.5em
+
+*/
+
+@mixin media-query($breakpoint) {
+	@if $breakpoint == phone {
+		//600px
+		@media only screen and (max-width: 37.5em) {
+			//@content directive, which allows us to pass a content block into a mixin.
+			@content;
+		}
+	}
+	@if $breakpoint == tab-port {
+		//992px
+		@media only screen and (max-width: 62em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-land {
+		//1200px
+		@media only screen and(max-width: 75em) {
+			@content;
+		}
+	}
+	@if $breakpoint == desktop {
+		//1800px
+		@media only screen and(max-width: 112.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == big-desktop {
+		//1800px
+		@media only screen and(min-width: 112.5em) {
+			@content;
+		}
+	}
+}

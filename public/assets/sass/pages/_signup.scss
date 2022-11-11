@@ -1,0 +1,345 @@
+.full-height {
+    height: 100vh;
+    @media screen and (max-width: 768px) {
+        height: auto;
+    }
+    @media screen and (max-height: 650px) {
+        height: auto;
+    }
+}
+
+.section-header {
+    .main-logo {
+        .logo {
+            width: 15rem;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.section-signup {
+    &__signup-box {
+        padding: 5.4rem 0;
+        @media screen and (max-height: 650px) {
+            padding: 2.5rem 0;
+        }
+        .company-type {
+            font-weight: 900;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            color: #21CCC8;
+        }
+        .emplyee-of-company {
+            font-size: 1.8rem;
+            color: #21CCC8;
+        }
+    }
+    &__left-side {
+        max-height: 80rem;
+        height: 52rem;
+        width: 50%;
+        position: relative;
+        border-radius: 1rem 0 0 1rem;
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .border-right {
+        border-right: 1px solid $border-color;
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 0;
+            border-right: none;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+    .or {
+        position: relative;
+        text-align: center;
+        padding: 2.5rem;
+        color: $border-color;
+        font-weight: 500;
+        @include flex($justify: center, $align: center);
+        &::after {
+            content: "";
+            width: 45%;
+            height: 1px;
+            left: 0;
+            background-color: $border-color;
+            position: absolute;
+            left: 0;
+        }
+        &::before {
+            content: "";
+            width: 45%;
+            height: 1px;
+            background-color: $border-color;
+            position: absolute;
+            right: 0;
+        }
+    }
+    .seprater {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #21CCC8;
+        font-weight: bolder;
+        font-size: 2rem;
+        @include flex($justify: center, $align: center);
+        &::after {
+            content: "";
+            width: 1px;
+            position: absolute;
+            top: 5rem;
+            height: 18rem;
+            border-right: 1px solid $border-color;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 4rem;
+            width: 1px;
+            height: 18rem;
+            border-right: 1px solid $border-color;
+        }
+        &::before,
+        &::after {
+            @media (max-width: 768px) {
+                width: 40%;
+                height: 1px;
+                border-right: 0;
+                border-bottom: 1px solid $border-color;
+            }
+        }
+        &::before {
+            @media (max-width: 768px) {
+                bottom: 1rem;
+                left: 1rem;
+            }
+        }
+        &::after {
+            @media (max-width: 768px) {
+                top: 2rem;
+                right: 1rem;
+            }
+        }
+    }
+    &__welcome-img-wrapper {
+        padding: 5rem 0;
+        .welcome-img-text {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .welcome-img {
+            height: 26rem;
+        }
+    }
+    &__right-side {
+        max-height: 80rem;
+        height: 52rem;
+        width: 50%;
+        padding: 5.4rem 0;
+        border-radius: 0rem 1rem 1rem 0rem;
+        @media (max-width: 768px) {
+            width: 100%;
+            border-radius: 0;
+        }
+        .top-input-info {
+            .arrow-back {
+                @media (max-width: 768px) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .arrow-back-2 {
+            position: absolute;
+            left: 2rem;
+            top: .8rem;
+        }
+        .company-inputs {
+            padding: 1rem 2rem;
+            .comapany-name {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.5rem;
+            }
+            .comapany-name-2 {
+                position: absolute;
+                left: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1.5rem;
+            }
+        }
+    }
+    .modifier-1 {
+        padding: 1rem 0;
+    }
+    .modifier-2 {
+        &::placeholder {
+            text-align: center;
+        }
+    }
+    .right-arrow {
+        position: absolute;
+        right: 1rem;
+        height: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .details {
+        padding: 0rem 6rem;
+        font-family: 'Montserrat', sans-serif;
+        @include media-query(tab-land) {
+            padding: 0rem 4rem;
+        }
+        @include media-query(phone) {
+            padding: 0rem 2rem;
+        }
+        .select-code {
+            max-width: 10rem;
+        }
+        .form-control,
+        select {
+            font-size: 1.9rem;
+            border-radius: 3rem;
+            border: $border2;
+            color: #21CCC8;
+            padding: 1rem;
+            &::placeholder {
+                color: $placeholdertext;
+            }
+        }
+        .form-select {
+            background-image: url(/cc/img/sign-up/Polygon\ 1.png);
+        }
+        select {
+            font-weight: 700;
+        }
+        .next-btn {
+            margin-top: 6rem;
+            @media only screen and (max-width: 767px) {
+                margin-top: 4rem;
+            }
+        }
+        .input-group-text {
+            padding-left: 2rem;
+            background-color: transparent;
+            width: 14rem;
+            border-radius: 3rem 0 0 3rem;
+        }
+        .input-wrapper {
+            .slect-varification-m {
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 10;
+            }
+            .form-check-input[type=checkbox] {
+                border-radius: 50%;
+            }
+            .form-check-input:checked {
+                background-color: #21CCC8;
+                border-color: #21CCC8;
+            }
+        }
+    }
+    .company-inputs {
+        .form-control {
+            font-size: 1.7rem;
+            padding: .7rem;
+            &::placeholder {
+                padding-left: 1.4rem;
+            }
+        }
+        .form-select {
+            border: 0;
+            font-size: 1.7rem;
+            padding: .7rem;
+            padding-left: 2rem;
+            background: linear-gradient(to top, rgba(0, 217, 182, 100%), rgba(0, 193, 215, 100%));
+        }
+        .down-arrow {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            width: .8rem;
+        }
+        select {
+            border-radius: 3rem;
+            color: white;
+            option {
+                color: black;
+            }
+        }
+        .packges {
+            height: 8rem;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 1rem;
+            overflow-y: scroll;
+            .pkg-1 {
+                border-bottom: 1px solid #CECECE;
+                padding: 1rem 0;
+            }
+            img {
+                width: 1.5rem;
+                object-fit: cover;
+            }
+            .title {
+                width: 30rem;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+            .cross {
+                flex-grow: 1;
+                text-align: center;
+            }
+            .check {
+                flex-grow: 1;
+                text-align: center;
+            }
+        }
+        .or {
+            padding: 0;
+        }
+        .or::after,
+        .or::before {
+            width: 32%;
+        }
+        .price-plan {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            .monthly {
+                flex-grow: 1;
+                border-radius: 1.1rem;
+                height: 13rem;
+                padding: .6rem 1rem;
+            }
+            .yearly {
+                flex-grow: 1;
+                border-radius: 1.1rem;
+                height: 13rem;
+                padding: .6rem 1rem;
+            }
+            .form-check-input[type=checkbox] {
+                border-radius: 50%;
+            }
+            .form-check-input {
+                width: 2rem;
+                height: 2rem;
+            }
+            .form-check-input:focus {
+                outline: 0;
+                box-shadow: 0;
+            }
+        }
+    }
+}

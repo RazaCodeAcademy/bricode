@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.611" height="23.609" viewBox="0 0 23.611 23.609">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9b5feb"/>
+      <stop offset="0.324" stop-color="#6941bf"/>
+      <stop offset="0.499" stop-color="#5435ad"/>
+      <stop offset="0.626" stop-color="#462ca1"/>
+      <stop offset="0.845" stop-color="#332191"/>
+      <stop offset="1" stop-color="#2d1e8c"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_ionic-ios-call" data-name="Icon ionic-ios-call" d="M27.419,22.989a19.831,19.831,0,0,0-4.143-2.772c-1.242-.6-1.7-.584-2.575.049-.731.529-1.2,1.02-2.047.836s-2.5-1.438-4.112-3.042-2.864-3.27-3.042-4.112.313-1.315.836-2.047c.633-.879.652-1.334.049-2.575A19.439,19.439,0,0,0,9.613,5.183c-.9-.9-1.106-.707-1.6-.529a9.129,9.129,0,0,0-1.469.781A4.431,4.431,0,0,0,4.775,7.3c-.35.756-.756,2.164,1.309,5.839a32.582,32.582,0,0,0,5.728,7.64h0l.006.006.006.006h0a32.709,32.709,0,0,0,7.64,5.728c3.676,2.065,5.083,1.66,5.839,1.309a4.356,4.356,0,0,0,1.862-1.764,9.129,9.129,0,0,0,.781-1.469C28.126,24.1,28.328,23.892,27.419,22.989Z" transform="translate(-4.49 -4.502)" fill="url(#linear-gradient)"/>
+</svg>
