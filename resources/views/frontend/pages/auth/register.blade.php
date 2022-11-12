@@ -27,9 +27,9 @@
                         </div>
                         <!-- /Left Text-->
                         <!-- Register-->
-                        <div class="d-flex col-lg-6 align-items-center auth-bg px-2 p-lg-5">
-                            <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto">
-                                <h2 class="card-title font-weight-bold mb-1">Bricode Sign Up🚀</h2>
+                        <div class="d-flex col-lg-6 align-items-center auth-bg px-2 p-lg-5 pt-5 pt-md-0">
+                            <div class="col-12 col-sm-8 col-md-6 col-lg-12 px-xl-2 mx-auto mt-5 mt-md-0">
+                                <h2 class="card-title font-weight-bold mb-1">Bricode Sign Up</h2>
                                 <p class="card-text mb-2">Create your account with bricode!</p>
                                 @if (session()->has('error'))
                                     <div class="alert alert-danger">
@@ -234,12 +234,15 @@
                                         <div class="custom-control custom-checkbox">
                                             <input class="custom-control-input" id="register-privacy-policy"
                                                 type="checkbox" tabindex="4" value="{{ old('term&condition') }}" required/>
-                                            <label class="custom-control-label" for="register-privacy-policy">Terms & Condition<a
-                                                    href="javascript:void(0);"><i
-                                                    class="la la-question-circle"
-                                                    style="color: rgb(0, 217, 255); font "></i></a></label>
+                                            <label class="custom-control-label" for="register-privacy-policy">Terms & Conditions</label>
+                                            <a type="button" data-toggle="modal" data-target="#exampleModal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                                                    </svg>
+                                              </a>
                                         </div>
                                     </div>
+
                                     <button class="btn btn-primary btn-block" tabindex="5">Sign up</button>
                                 </form>
                                 <p class="text-center mt-2"><span>Already have an account?</span><a
@@ -260,6 +263,57 @@
                         <!-- /Register-->
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade text-left" id="defaultSize" tabindex="-1" role="dialog" aria-labelledby="myModalLabel18" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel18">Default Modal</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I love candy candy cake powder I love icing ice cream pastry. Biscuit lemon drops sesame snaps.
+                    Topping biscuit croissant gummi bears jelly beans cake cake bear claw muffin. Lemon drops oat cake
+                    pastry bear claw liquorice lemon drops.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Terms & Conditions </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>👍Bricode international have its all right reserved.</li>
+                        <li>👍Bricode international take strict legal action again misuse of its accets.</li>
+                        <li>👍Minimum deposit is 3K and minimum withdraw is 500.</li>
+                        <li>👍Withdraw receive time is 24 hours Approximately.</li>
+                        <li>👍Activation balance isn't refundable and only be use for shopping.</li>
+                        <li>👍For complain and suggestions contact us.</li>
+                    </ol>
+                    <a href="mailto:info@bricodeinternational.com">info@bricodeinternational.com</a>
+                    <br>
+                    <a href="tel:+923156835905">+923-156835905</a>
+                </div>
+
             </div>
         </div>
     </div>

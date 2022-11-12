@@ -16,8 +16,7 @@
 ### We look forward to providing you with the ultimate learning and Earning experience of Digital working
 
 ### With best wishes,
-### Info@starmultinational.com
-### www.Starmultinational.com
+### info@bricodeinternational.com
 
 
 

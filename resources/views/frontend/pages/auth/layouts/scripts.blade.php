@@ -11,6 +11,7 @@
     <!-- BEGIN: Theme JS-->
     <script src="{{ asset('public/app-assets/js/core/app-menu.js') }}"></script>
     <script src="{{ asset('public/app-assets/js/core/app.js') }}"></script>
+    <script src="{{ asset('public/app-assets/js/scripts/components/components-modals.js') }}"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
